@@ -96,6 +96,14 @@ tasks {
             }
         }
     }
+
+    // Force J16 because jitpack sucks
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(16))
+        }
+    }
+
 }
 
 bukkit {
